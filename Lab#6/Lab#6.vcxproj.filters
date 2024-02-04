@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Enemigos">
+      <UniqueIdentifier>{b1701071-92aa-4e28-a67e-e6b75b7a1483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Enemigos">
+      <UniqueIdentifier>{64970ade-6508-4c64-8984-4f5e56acdef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Armas">
+      <UniqueIdentifier>{14a76588-0c9a-4242-8cbb-0eb0d771ee6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Armas">
+      <UniqueIdentifier>{a8a3b9fd-4ade-44b8-825b-dbd4a7b8169f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Caballero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Juego.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PoderosasHierbas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Entidad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemigo.cpp">
+      <Filter>Source Files\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="Gargola.cpp">
+      <Filter>Source Files\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="Ogro.cpp">
+      <Filter>Source Files\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="Tentaculos.cpp">
+      <Filter>Source Files\Enemigos</Filter>
+    </ClCompile>
+    <ClCompile Include="Arma.cpp">
+      <Filter>Source Files\Armas</Filter>
+    </ClCompile>
+    <ClCompile Include="Ballesta.cpp">
+      <Filter>Source Files\Armas</Filter>
+    </ClCompile>
+    <ClCompile Include="Daga.cpp">
+      <Filter>Source Files\Armas</Filter>
+    </ClCompile>
+    <ClCompile Include="Espada.cpp">
+      <Filter>Source Files\Armas</Filter>
+    </ClCompile>
+    <ClCompile Include="Yesca.cpp">
+      <Filter>Source Files\Armas</Filter>
+    </ClCompile>
+    <ClCompile Include="Cofre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Juego.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Caballero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PoderosasHierbas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entidad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigo.h">
+      <Filter>Header Files\Enemigos</Filter>
+    </ClInclude>
+    <ClInclude Include="Ogro.h">
+      <Filter>Header Files\Enemigos</Filter>
+    </ClInclude>
+    <ClInclude Include="Gargola.h">
+      <Filter>Header Files\Enemigos</Filter>
+    </ClInclude>
+    <ClInclude Include="Tentaculos.h">
+      <Filter>Header Files\Enemigos</Filter>
+    </ClInclude>
+    <ClInclude Include="Arma.h">
+      <Filter>Header Files\Armas</Filter>
+    </ClInclude>
+    <ClInclude Include="Daga.h">
+      <Filter>Header Files\Armas</Filter>
+    </ClInclude>
+    <ClInclude Include="Ballesta.h">
+      <Filter>Header Files\Armas</Filter>
+    </ClInclude>
+    <ClInclude Include="Espada.h">
+      <Filter>Header Files\Armas</Filter>
+    </ClInclude>
+    <ClInclude Include="Yesca.h">
+      <Filter>Header Files\Armas</Filter>
+    </ClInclude>
+    <ClInclude Include="Cofre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
