@@ -5,6 +5,6 @@ class Espada : public Arma {
 public:
 	Espada();
 	~Espada();
-	bool puedeAtacar(Enemigo& enemigo);
+	bool puedeAtacar(int);
 };
 #endif

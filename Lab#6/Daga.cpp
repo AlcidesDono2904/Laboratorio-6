@@ -2,6 +2,6 @@
 
 Daga::Daga(): Arma(3) {}
 Daga::~Daga(){}
-bool Daga::puedeAtacar(Enemigo& enemigo) {
-	return enemigo.getIdEnemigo() == 1;
+bool Daga::puedeAtacar(int enemigo) {
+	return enemigo == 1;
 }

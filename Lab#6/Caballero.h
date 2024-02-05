@@ -3,7 +3,6 @@
 #include <iostream>
 #include "Entidad.h"
 #include "Arma.h"
-#include "PoderosasHierbas.h"
 
 class Caballero: public Entidad{
 

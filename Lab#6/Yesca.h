@@ -5,7 +5,7 @@ class Yesca : public Arma {
 public:
 	Yesca();
 	~Yesca();
-	bool puedeAtacar(Enemigo& enemigo);
+	bool puedeAtacar(int enemigo);
 };
 
 #endif

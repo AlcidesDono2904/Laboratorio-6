@@ -5,7 +5,7 @@ class Ballesta: public Arma {
 public:
 	Ballesta();
 	~Ballesta();
-	bool puedeAtacar(Enemigo& enemigo);
+	bool puedeAtacar(int);
 
 };
 #endif

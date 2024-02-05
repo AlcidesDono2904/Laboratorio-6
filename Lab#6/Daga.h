@@ -5,6 +5,6 @@ class Daga : public Arma {
 public:
 	Daga();
 	~Daga();
-	bool puedeAtacar(Enemigo& enemigo);
+	bool puedeAtacar(int);
 };
 #endif

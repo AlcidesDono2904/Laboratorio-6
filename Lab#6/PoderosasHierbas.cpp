@@ -2,6 +2,7 @@
 
 PoderosasHierbas::PoderosasHierbas(int cantidadCuracion) : Entidad(3), cantidadCuracion(cantidadCuracion) {}
 
+PoderosasHierbas::PoderosasHierbas() : Entidad(3), cantidadCuracion(15) {}
 
 PoderosasHierbas::~PoderosasHierbas(){}
 
