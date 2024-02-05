@@ -18,63 +18,103 @@ Juego::Juego(int t1, int t2) {
 
 	}
 }
-//void Juego::iniciar() {
+void Juego::iniciar() {
 
-	/*for (int i = 0; i < tam1; i++) {
+	for (int i = 0; i < tam1; i++) {
 		for (int j = 0; j < tam2; j++) {
-			if (i == 0) {
-				if (j == 0) {
-					mapa[i][j] = new Caballero;
-					mapa[i][j]->setX(i);
-					mapa[i][j]->setY(j);
-				}
-				else {
-					mapa[i][j] = new Enemigo(0, 1);
-					mapa[i][j]->setX(i);
-					mapa[i][j]->setY(j);
-				}
-			}
-			else
-				if (i < 4) {
-					mapa[i][j] = new Entidad(0);
-					mapa[i][j]->setX(i);
-					mapa[i][j]->setY(j);
+
+			switch (i) {
+			case 0:
+				mapa[i][j] = new Tentaculos;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+				break;
+			case 1:
+				if (j < 5) {
+					mapa[i][j] = new Tentaculos;
+					/*mapa[i][j]->setX(i);
+					mapa[i][j]->setY(j);*/
 				}
 				else
-					if (i >= 4 && i < 7) {
-						if (i == 4 && j == 0) {
-							mapa[i][j] = new Entidad(0);
-							mapa[i][j]->setX(i);
-							mapa[i][j]->setY(j);
-						}
-						else
-							mapa[i][j] = new Entidad(1);
-						mapa[i][j]->setX(i);
-						mapa[i][j]->setY(j);
+					mapa[i][j] = new Ogro;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+				break;
+			case 2:
+				if (j < 8) {
+					mapa[i][j] = new Ogro;
+					/*mapa[i][j]->setX(i);
+					mapa[i][j]->setY(j)*/;
+				}
+				else
+					mapa[i][j] = new Gargola;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+				break;
+			case 3:
+				mapa[i][j] = new Gargola;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+
+			case 4:
+				if (j < 7) {
+					mapa[i][j] = new Espada;
+					/*mapa[i][j]->setX(i);
+					mapa[i][j]->setY(j);*/
+				}
+				else {
+					mapa[i][j] = new Ballesta;
+					/*mapa[i][j]->setX(i);
+					mapa[i][j]->setY(j);*/
+				}
+				break;
+			case 5:
+				if (j < 4) {
+					mapa[i][j] = new Ballesta;
+					/*mapa[i][j]->setX(i);
+					mapa[i][j]->setY(j);*/
+				}
+				else
+					mapa[i][j] = new Daga;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+				break;
+			case 6:
+				mapa[i][j] = new Yesca;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+				break;
+			case 7:
+				if (j == 0) {
+					mapa[i][j] = new Yesca;
+					/*apa[i][j]->setX(i);
+					mapa[i][j]->setY(j);*/
+				}
+				else
+					if (j > 0 && j < 7) {
+						mapa[i][j] = new PoderosasHierbas;
+						/*mapa[i][j]->setX(i);
+						mapa[i][j]->setY(j);*/
 					}
 					else
-						if (i == 7) {
-							if (j < 1) {
-								mapa[i][j] = new Entidad(1);
-								mapa[i][j]->setX(i);
-								mapa[i][j]->setY(j);
-							}
-							if (j >= 1 && j < 7) {
-								mapa[i][j] = new Entidad(3);
-								mapa[i][j]->setX(i);
-								mapa[i][j]->setY(j);
-							}if (j == 7) {
-								mapa[i][j] = new Entidad(4);
-								mapa[i][j]->setX(i);
-								mapa[i][j]->setY(j);
-							}
+						if (j == 7) {
+							mapa[i][j] = new Cofre;
+							/*mapa[i][j]->setX(i);
+							mapa[i][j]->setY(j);*/
 						}
-						else mapa[i][j] = nullptr;
+						else
+							mapa[i][j] = new Caballero;
+				/*mapa[i][j]->setX(i);
+				mapa[i][j]->setY(j);*/
+				break;
 
+			default:mapa[i][j] = nullptr;
+
+				break;
+			}
 		}
 	}
-
-}*/
+}
 
 void Juego::inicializar() {
 
