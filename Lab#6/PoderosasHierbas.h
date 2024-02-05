@@ -3,10 +3,17 @@
 #include "Entidad.h"
 class PoderosasHierbas: public Entidad {
 private:
-
+	int cantidadCuracion;
 public:
-	PoderosasHierbas();
+	PoderosasHierbas(int cantidadCuracion);
+	~PoderosasHierbas();
+	
+	int getCantidadCuracion()const;
 
+	//las virtuales
+	virtual int getId() const;
+	virtual void setId(int id_dato);
+	virtual bool puedeAtacar();
 
 };
 
