@@ -18,7 +18,9 @@ Juego::Juego(int t1, int t2) {
 
 	}
 }
+
 void Juego::iniciar() {
+
 
 	for (int i = 0; i < tam1; i++) {
 		for (int j = 0; j < tam2; j++) {
@@ -63,6 +65,7 @@ void Juego::iniciar() {
 					mapa[i][j]->setY(j);*/
 				}
 				else {
+
 					mapa[i][j] = new Ballesta;
 					/*mapa[i][j]->setX(i);
 					mapa[i][j]->setY(j);*/
@@ -121,6 +124,7 @@ void Juego::inicializar() {
 	Entidad* aux;
 
 	for (int i = 0; i < 9; i++) {
+
 		for (int j = 0; j < 9; j++) {
 			std::random_device rd;
 			std::mt19937 gen(rd());
@@ -133,17 +137,13 @@ void Juego::inicializar() {
 
 			mapa[random][j] = aux;
 
-		}
 	}
 }
 Juego::~Juego() {
-
-	for (int i = 0; i < 9; i++) {
-
+	for (int i = 0; i < tam1; i++) {
 		delete[] mapa[i];
-
 	}
 	delete[] mapa;
 	mapa = nullptr;
-
 }
+
