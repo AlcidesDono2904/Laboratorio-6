@@ -2,7 +2,9 @@
 
 PoderosasHierbas::PoderosasHierbas(int cantidadCuracion) : Entidad(3), cantidadCuracion(cantidadCuracion) {}
 
+
 PoderosasHierbas::~PoderosasHierbas(){}
+
 
 int PoderosasHierbas::getCantidadCuracion() const
 {
@@ -22,5 +24,4 @@ bool PoderosasHierbas::puedeAtacar()
 {
 	return false;
 }
-
 

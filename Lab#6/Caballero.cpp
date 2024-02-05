@@ -1,6 +1,9 @@
 #include "Caballero.h"'
 
+
+
 Caballero::Caballero():Entidad(2), HP(100) {}
+
 
 Caballero::~Caballero()
 {
@@ -19,7 +22,7 @@ void Caballero::setHP(int _HP)
 void Caballero::usarArma()
 {
 	if (inventarioArma != nullptr) {
-		
+
 		int danio = inventarioArma->getTipoDano();
 
 		std::cout << "El caballero ataca, danio " << danio << std::endl;
@@ -42,4 +45,6 @@ void Caballero::agregarArma(Arma* nuevaArma)
 	}
 
 	inventarioArma = nuevaArma;
+
 }
+

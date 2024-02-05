@@ -1,13 +1,13 @@
 #ifndef PODEROSASHIERBAS_H
 #define PODEROSASHIERBAS_H
 #include "Entidad.h"
-class PoderosasHierbas: public Entidad {
+class PoderosasHierbas : public Entidad {
 private:
 	int cantidadCuracion;
 public:
 	PoderosasHierbas(int cantidadCuracion);
 	~PoderosasHierbas();
-	
+
 	int getCantidadCuracion()const;
 
 	//las virtuales
@@ -17,6 +17,9 @@ public:
 
 };
 
+
+
+#endif
 
 
 #endif
