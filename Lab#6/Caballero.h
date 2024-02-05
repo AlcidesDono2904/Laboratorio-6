@@ -16,6 +16,8 @@ public:
 	void setHP(int _HP);
 	void usarArma();
 	void agregarArma(Arma* nuevaArma);
+	int getTipoDano();
+	int getIdEnemigo();
 };
 
 #endif

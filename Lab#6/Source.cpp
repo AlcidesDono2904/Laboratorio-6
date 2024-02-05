@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include "Juego.h"
 int main() {
 /*    while (true) {
         // Verificar si la tecla de flecha arriba está siendo presionada
@@ -29,6 +30,11 @@ int main() {
         // Dormir durante un breve período para evitar un uso excesivo de la CPU
         Sleep(120);
     }*/
+
+    Juego juego(9,9);
+    juego.iniciar();
+    juego.inicializar();
+    std::cout<<juego.dibujar();
 
 
     return 0;

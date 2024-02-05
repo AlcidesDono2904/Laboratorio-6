@@ -121,7 +121,7 @@ void Juego::iniciar() {
 
 void Juego::inicializar() {
 
-	Entidad* aux;
+	Entidad* aux=nullptr;
 
 	for (int i = 0; i < 9; i++) {
 
@@ -132,9 +132,7 @@ void Juego::inicializar() {
 			int random = distribution1(gen);
 
 			aux = mapa[j][random];
-
 			mapa[j][random] = mapa[random][j];
-
 			mapa[random][j] = aux;
 		}
 	}
@@ -151,4 +149,53 @@ Juego::~Juego() {
 		delete[] mapa;
 }
 
+std::string Juego::dibujar() {
+	std::stringstream ss;
+	for (int i = 0; i < tam1; i++) {
+		for (int j = 0; j < tam2; j++) {
+			if (mapa[i][j] == nullptr) {
+				ss << "* ";
+			}
+			else if (mapa[i][j]->getId() == 0) {//enemigo
+				switch (mapa[i][j]->getIdEnemigo()) {
+				case 0:
+					ss << "G ";
+					break;
+				case 1:
+					ss << "O ";
+					break;
+				case 2:
+					ss << "T ";
+					break;
+				}
+			}
+			else if (mapa[i][j]->getId() == 1) {//arma
+				switch (mapa[i][j]->getTipoDano()) {
+				case 0:
+					ss << "B ";
+					break;
+				case 1:
+					ss << "E ";
+					break;
+				case 2:
+					ss << "Y ";
+					break;
+				case 3:
+					ss << "D ";
+					break;
+				}
+			}
+			else if (mapa[i][j]->getId() == 2) {//caballero
+				ss << "C ";
+			}
+			else if (mapa[i][j]->getId() == 3) {//hierba
+				ss << "H ";
+			}
+			else if (mapa[i][j]->getId() == 4) {//cofre
+				ss << "F ";
 
+			}
+		}
+	}
+	return ss.str();
+}

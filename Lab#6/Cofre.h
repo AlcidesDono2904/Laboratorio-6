@@ -4,5 +4,7 @@
 class Cofre :public Entidad{
 public:
 	Cofre();
+	int getIdEnemigo();
+	int getTipoDano();
 };
 #endif

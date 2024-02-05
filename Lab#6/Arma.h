@@ -11,5 +11,6 @@ public:
 	int getTipoDano();
 	void setTipoDano(int tipoDano);
 	virtual bool puedeAtacar(int)=0;
+	int getIdEnemigo();
 };
 #endif

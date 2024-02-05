@@ -17,5 +17,6 @@ public:
 	void setIdEnemigo(int idEnemigo);
 	void setDano(int dano);
 	void atacar(Caballero&);
+	int getTipoDano();
 };
 #endif

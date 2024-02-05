@@ -14,6 +14,9 @@ public:
 	~Entidad();
 	int getId();
 	void setId(int);
+	virtual int getTipoDano() = 0;
+	virtual int getIdEnemigo() = 0;
+
 };
 
 #endif

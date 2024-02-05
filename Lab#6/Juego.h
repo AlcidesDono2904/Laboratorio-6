@@ -20,6 +20,8 @@ public:
 	~Juego();
 	void iniciar();
 	void inicializar();
+	std::string dibujar();
+
 private:
 	Entidad*** mapa;
 	int tam1;

@@ -26,3 +26,12 @@ bool PoderosasHierbas::puedeAtacar()
 	return false;
 }
 
+int PoderosasHierbas::getTipoDano()
+{
+	return -1;
+}
+int PoderosasHierbas::getIdEnemigo()
+{
+	return -1;
+}
+

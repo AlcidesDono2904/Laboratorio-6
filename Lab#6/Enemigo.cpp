@@ -9,3 +9,4 @@ void Enemigo::setDano(int dano_dato) { dano = dano_dato; }
 void Enemigo::atacar(Caballero& caba) {
 	caba.setHP(caba.getHP() - dano);
 }
+int Enemigo::getTipoDano() { return -1; }

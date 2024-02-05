@@ -1,4 +1,4 @@
-#include "Caballero.h"'
+#include "Caballero.h"
 
 
 
@@ -38,7 +38,8 @@ void Caballero::usarArma()
 }
 
 void Caballero::agregarArma(Arma* nuevaArma)
-{
+{	
+
 	//para quitar si hay un arma equipada
 	if (inventarioArma != nullptr) {
 		delete inventarioArma;
@@ -46,3 +47,5 @@ void Caballero::agregarArma(Arma* nuevaArma)
 	inventarioArma = nuevaArma;
 }
 
+int Caballero::getTipoDano(){return -1;}
+int Caballero::getIdEnemigo(){return -1;}
