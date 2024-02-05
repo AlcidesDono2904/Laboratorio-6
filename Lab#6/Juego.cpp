@@ -18,6 +18,7 @@ Juego::Juego(int t1, int t2) {
 
 	}
 }
+
 //void Juego::iniciar() {
 
 	/*for (int i = 0; i < tam1; i++) {
@@ -32,55 +33,15 @@ Juego::Juego(int t1, int t2) {
 					mapa[i][j] = new Enemigo(0, 1);
 					mapa[i][j]->setX(i);
 					mapa[i][j]->setY(j);
-				}
-			}
-			else
-				if (i < 4) {
-					mapa[i][j] = new Entidad(0);
-					mapa[i][j]->setX(i);
-					mapa[i][j]->setY(j);
-				}
-				else
-					if (i >= 4 && i < 7) {
-						if (i == 4 && j == 0) {
-							mapa[i][j] = new Entidad(0);
-							mapa[i][j]->setX(i);
-							mapa[i][j]->setY(j);
-						}
-						else
-							mapa[i][j] = new Entidad(1);
-						mapa[i][j]->setX(i);
-						mapa[i][j]->setY(j);
-					}
-					else
-						if (i == 7) {
-							if (j < 1) {
-								mapa[i][j] = new Entidad(1);
-								mapa[i][j]->setX(i);
-								mapa[i][j]->setY(j);
-							}
-							if (j >= 1 && j < 7) {
-								mapa[i][j] = new Entidad(3);
-								mapa[i][j]->setX(i);
-								mapa[i][j]->setY(j);
-							}if (j == 7) {
-								mapa[i][j] = new Entidad(4);
-								mapa[i][j]->setX(i);
-								mapa[i][j]->setY(j);
-							}
-						}
-						else mapa[i][j] = nullptr;
-
-		}
-	}
-
 }*/
+
 
 void Juego::inicializar() {
 
 	Entidad* aux;
 
 	for (int i = 0; i < 9; i++) {
+
 		for (int j = 0; j < 9; j++) {
 			std::random_device rd;
 			std::mt19937 gen(rd());
@@ -93,17 +54,13 @@ void Juego::inicializar() {
 
 			mapa[random][j] = aux;
 
-		}
 	}
 }
 Juego::~Juego() {
-
-	for (int i = 0; i < 9; i++) {
-
+	for (int i = 0; i < tam1; i++) {
 		delete[] mapa[i];
-
 	}
 	delete[] mapa;
 	mapa = nullptr;
-
 }
+

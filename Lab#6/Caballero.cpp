@@ -1,6 +1,9 @@
 #include "Caballero.h"'
 
-Caballero::Caballero() :Entidad(2), HP(100) {}
+
+
+Caballero::Caballero():Entidad(2), HP(100) {}
+
 
 Caballero::~Caballero()
 {
@@ -42,4 +45,6 @@ void Caballero::agregarArma(Arma* nuevaArma)
 	}
 
 	inventarioArma = nuevaArma;
+
 }
+
