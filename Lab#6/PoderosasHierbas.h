@@ -5,7 +5,8 @@ class PoderosasHierbas : public Entidad {
 private:
 	int cantidadCuracion;
 public:
-	PoderosasHierbas(int cantidadCuracion);
+	PoderosasHierbas(int cantidadCuracion);\
+	PoderosasHierbas();
 	~PoderosasHierbas();
 
 	int getCantidadCuracion()const;
@@ -19,7 +20,7 @@ public:
 
 
 
-#endif
+
 
 
 #endif

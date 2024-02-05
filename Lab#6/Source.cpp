@@ -1,7 +1,7 @@
 #include <iostream>
 #include <windows.h>
 int main() {
-    while (true) {
+/*    while (true) {
         // Verificar si la tecla de flecha arriba está siendo presionada
         if (GetAsyncKeyState(VK_UP) & 0x8000) {
             std::cout << "Tecla de flecha arriba presionada." << std::endl;
@@ -28,7 +28,7 @@ int main() {
 
         // Dormir durante un breve período para evitar un uso excesivo de la CPU
         Sleep(120);
-    }
+    }*/
 
 
     return 0;

@@ -136,14 +136,19 @@ void Juego::inicializar() {
 			mapa[j][random] = mapa[random][j];
 
 			mapa[random][j] = aux;
-
+		}
 	}
 }
 Juego::~Juego() {
-	for (int i = 0; i < tam1; i++) {
-		delete[] mapa[i];
-	}
-	delete[] mapa;
-	mapa = nullptr;
+		for (int i = 0; i < tam1; i++) {
+			for (int j = 0; j < tam2; j++) {
+				if (mapa[i][j] != nullptr) {
+					delete mapa[i][j];
+				}
+			}
+			delete[] mapa[i];	
+		}
+		delete[] mapa;
 }
+
 

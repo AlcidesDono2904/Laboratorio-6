@@ -2,6 +2,6 @@
 
 Yesca::Yesca(): Arma(2) {}
 Yesca::~Yesca(){}
-bool Yesca::puedeAtacar(Enemigo& enemigo) {
-	return enemigo.getIdEnemigo() == 3;
+bool Yesca::puedeAtacar(int enemigo) {
+	return enemigo == 3;
 }

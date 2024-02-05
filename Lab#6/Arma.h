@@ -1,6 +1,6 @@
 #ifndef ARMA_H
 #define ARMA_H
-#include "Enemigo.h"
+#include "Entidad.h"
 
 class Arma: public Entidad {
 private:
@@ -10,6 +10,6 @@ public:
 	~Arma();
 	int getTipoDano();
 	void setTipoDano(int tipoDano);
-	virtual bool puedeAtacar(Enemigo& enemigo)=0;
+	virtual bool puedeAtacar(int)=0;
 };
 #endif

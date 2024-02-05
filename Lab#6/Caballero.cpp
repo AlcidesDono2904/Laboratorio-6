@@ -43,8 +43,6 @@ void Caballero::agregarArma(Arma* nuevaArma)
 	if (inventarioArma != nullptr) {
 		delete inventarioArma;
 	}
-
 	inventarioArma = nuevaArma;
-
 }
 
